@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Inloggen</title>
+    <link rel="stylesheet" href="style/login.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <header>
+
+        <nav>
+
+            <a href="index.html"><img src="images/logons.png" alt="Logo NS"></a>
+
+            <img src="images/hamburger.png" alt="hamburgericoon">
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+
+            <img src="images/searchicon.png" alt="zoeken" class="testzoeken">
+
+            <form>
+                <fieldset>
+                    <legend>Zoeken</legend>
+                    <label for="search">Zoeken</label>
+                    <input type="search" name="Verhaal zoeken" placeholder="Titel, Auteur of Genre">
+                </fieldset>
+            </form>
+
+            <a href="login.html"><img src="images/login.png" alt="account"></a>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <nav>
+            <ul>
+                <li><a href="login.html" class="active">Inloggen</a> </li>
+                <li><a href="registreren.html">Registreren</a></li>
+            </ul>
+        </nav>
+
+        <form>
+            <fieldset>
+
+                <legend>Inloggen</legend>
+                <legend>Registreren</legend>
+
+                <label for="e-mail">E-mail</label>
+                <input type="email" id="e-mail" placeholder="Vul e-mail in" required class="goedkeuringmicro">
+
+                <label for="wachtwoord">Wachtwoord</label>
+                <input type="password" pattern=".{12,}" placeholder="Vul wachtwoord in" id="wachtwoord" required class="goedkeuringmicro">
+
+                <button>Inloggen</button>
+
+            </fieldset>
+        </form>
+
+    </main>
+
+    <script src="js/script.js"></script>
+
+</body>
