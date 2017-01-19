@@ -1,0 +1,520 @@
+                        /* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* Lettertypes */
+
+@font-face {
+    font-family: 'Segoe UI';
+    /*a name to be used later*/
+    src: url('css/fonts/segoeui.ttf');
+    /*URL to font*/
+}
+
+/*  */
+
+
+
+
+
+
+
+/* ===== == = === EIGEN CSS === = == =====*/
+
+* {
+    box-sizing: border-box;
+}
+
+/*frutiger font*/
+@font-face{
+    font-family: Frutiger;
+    src: url(".fonts/Frutiger-Light.otf") format("opentype")
+}
+
+body{
+    background-color: #e6e6e9;
+    font-family: Frutiger;
+    color: #242856;
+}
+
+
+
+/* ===== == = === HEADER === = == =====*/
+
+header{
+    background-color: white;
+    padding: 1em;
+
+}
+
+header nav{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+header img{
+    margin-left: auto;
+    margin-right: 2em;
+}
+
+header img:nth-child(2){
+    display: none;
+}
+
+header img:nth-child(1):hover{
+    transition:all 0.5s;
+    transform: rotateY(180deg);
+}
+
+header img:nth-child(4):hover{
+    transition:all 0.5s;
+    transform: rotateY(180deg);
+}
+
+header legend{
+    display: none;
+}
+
+header label{
+    display: none;
+}
+
+
+
+/* ===== == = === MAIN === = == =====*/
+
+main img{
+    width: 100%;
+}
+
+h1{
+    font-size: 2.5em;
+    width: 100%;
+}
+
+main>nav{
+    display: inline-flex;
+    width: 100%;
+}
+
+nav>button{
+    background-color: #0079d3;
+    color: #ffffff;
+    font-size: 1.5em;
+    border: none;
+    width: 100%;
+    padding: 0.5em;
+    border-style: solid;
+    border-color: #000166;
+}
+
+section {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+section h1{
+    padding: 0em 0.8em;
+    margin-bottom: 0.5em;
+    margin-top: 1em
+
+}
+
+article{
+    flex-wrap: wrap;
+    background-color: #fac518;
+    padding: 1.5em;
+    margin: 0em 2em;
+    width: 29%;
+    transition:all 0.5s;
+}
+
+article img{
+    width: 100%;
+}
+
+article img:hover{
+    transition:all .5s;
+    transform: scale(1.05, 1.05);
+}
+
+h2{
+    font-size: 2em;
+    margin-top: 0.2em
+}
+
+h3{
+    font-size: 1.em;
+    margin-top: 0.4em;
+}
+
+p{
+    color: white;
+    margin-top: 1em;
+    font-size: 1.2em;
+}
+
+article button{
+    background-color: #0079d3;
+    color: #ffffff;
+    border: none;
+    padding: 0.3em;
+    font-size: 1.5em;
+    width: 100%;
+    margin-top: 1em;
+}
+
+article button:hover{
+    transition:all .5s;
+    transform: scale(1.05, 1.05);
+    box-shadow: inset 0 2.2em #000166;
+}
+
+
+
+/* ===== == = === MICRO INTERACTIE === = == =====*/
+
+/*LIKE BUTTON*/
+
+.fill {
+    fill: #0079D3;
+}
+
+svg {
+    fill: #fac518;
+    stroke:#0079D3;
+    stroke-width:0.6;
+    width: 2em;
+    height: 2em;
+    transition: fill 600ms;
+    margin-top: 0.4em
+}
+
+/*SEARCHBAR*/
+
+input[type=search]{
+    width: 50%;
+    border: 0.1em solid #0079D3;
+    border-radius: 0.8em;
+    font-size: 0.9em;
+    background-color: white;
+    padding: 0.750em 1.950em .750em 0.900em;
+    -webkit-transition: width 0.3s ease-in-out;
+    transition: width 0.3s ease-in-out;
+}
+
+input[type=search]:focus {
+    width: 100%;
+}
+
+
+/*SCHRIJVER HOVER UITSCHUIF*/
+
+article img:hover + .schrijvermicro {
+    display:block;
+    opacity:1;
+    margin-top: 1em;
+}
+.schrijvermicro {
+    background-color: #0079D3;
+    color: white;
+    padding: 1em;
+    transition: all 0.3s;
+    margin-top: -3em;
+    margin-bottom: 1em;
+    opacity: 0;
+}
+
+
+
+
+/* ===== == = === media querie === = == =====*/
+
+
+/*overig voor beter layout articles (verhalen)*/
+@media (max-width:93em){
+
+    header img:nth-child(2){
+        display: none;
+    }
+
+    article{
+        padding: 1.5em;
+        margin: 0em 2em;
+        width: 28%;
+    }
+
+    p{
+        color: white;
+        margin-top: 1em;
+        font-size: 1em;
+    }
+}
+
+@media (max-width:76em){
+
+    header img:nth-child(2){
+        display: none;
+    }
+
+    article{
+        padding: 1.5em;
+        margin: 0em 2em;
+        width: 26%;
+    }
+
+    h2{
+        font-size: 1.5em;
+    }
+
+    p{
+        color: white;
+        margin-top: 1em;
+        font-size: 1em;
+    }
+}
+
+@media (max-width:68em){
+
+    header img:nth-child(2){
+        display: none;
+    }
+
+    article{
+        padding: 1.5em;
+        margin: 0em 2em 4em;
+        width: 40%;
+    }
+
+    h2{
+        font-size: 2em;
+    }
+
+    p{
+        color: white;
+        margin-top: 1em;
+        font-size: 1em;
+    }
+
+    section {
+        justify-content: flex-start;
+    }
+}
+
+
+/*Tablet*/
+@media (max-width:53em){
+
+    header img:nth-child(2){
+        display: none;
+    }
+
+     header{
+        padding: 0.5em;
+     }
+
+     header img{
+        max-width: 70%;
+        height: auto;
+        margin-right: 1em;
+    }
+
+    article{
+        padding: 1.5em;
+        margin: 0em 1em 2em;
+        width: 45%;
+    }
+
+    section h1{
+        padding: 0em 0.4em
+    }
+}
+
+
+/*Mobile*/
+@media (max-width:43em){
+
+    header img:nth-child(2){
+        display: flex;
+    }
+
+    header li{
+        display: none;
+    }
+
+    article{
+        padding: 1.5em;
+        margin: 0em 1em 2em;
+        width: 100%;
+    }
+
+    h2{
+        font-size: 2.5em;
+    }
+
+    p{
+        font-size: 1.3em
+    }
+}
+
+@media (max-width:31em){
+
+    article{
+        padding: 1.5em;
+        margin: 0em 1em 2em;
+        width: 100%;
+    }
+
+    h2{
+        font-size: 2.5em;
+    }
+
+    p{
+        font-size: 1em
+    }
+
+    input[type=search]{
+        display:none;
+    }
+}
+
+
+
+
+

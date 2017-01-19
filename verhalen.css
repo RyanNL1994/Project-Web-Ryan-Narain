@@ -1,0 +1,314 @@
+                        /* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* Lettertypes */
+
+@font-face {
+    font-family: 'Segoe UI';
+    /*a name to be used later*/
+    src: url('css/fonts/segoeui.ttf');
+    /*URL to font*/
+}
+
+/*  */
+
+
+
+/* ===== == = === EIGEN CSS === = == =====*/
+
+* {
+    box-sizing: border-box;
+}
+
+/*frutiger font*/
+@font-face{
+    font-family: Frutiger;
+    src: url(".fonts/Frutiger-Light.otf") format("opentype")
+}
+
+body{
+    background-color: #e6e6e9;
+    font-family: Frutiger;
+    color: #242856;
+}
+
+
+
+/* ===== == = === HEADER === = == =====*/
+
+header{
+    background-color: white;
+    padding: 1em;
+
+}
+
+header nav{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+header img{
+    margin-left: auto;
+    margin-right: 3em;
+}
+
+header img:nth-child(2){
+    display: none;
+}
+
+header img:nth-child(1):hover{
+    transition:all 0.5s;
+    transform: rotateY(180deg);
+}
+
+header img:nth-child(4):hover{
+    transition:all 0.5s;
+    transform: rotateY(180deg);
+}
+
+header label,legend{
+    display:none;
+}
+
+/*SEARCHBAR*/
+input[type=search]{
+    width: 50%;
+    border: 0.1em solid #0079D3;
+    border-radius: 0.8em;
+    font-size: 0.9em;
+    background-color: white;
+    padding: 0.750em 1.950em .750em 0.900em;
+    -webkit-transition: width 0.3s ease-in-out;
+    transition: width 0.3s ease-in-out;
+}
+
+input[type=search]:focus {
+    width: 100%;
+}
+
+
+
+/* ===== == = === MAIN === = == =====*/
+
+main img{
+    width: 100%;
+}
+
+main img:nth-child(2){
+    display: none;
+}
+
+main img:nth-child(3){
+    display: none;
+}
+
+main img:nth-child(4){
+    display: none;
+}
+
+
+
+/* ===== == = === MEDIAQUERIE === = == =====*/
+
+/*Laptop*/
+@media (max-width:100em){
+
+    header img:nth-child(2){
+        display: none;
+    }
+
+    main img:nth-child(1){
+        display: none;
+    }
+
+    main img:nth-child(2){
+        display: flex;
+    }
+}
+
+/*Tablet*/
+@media (max-width:61em){
+
+    header{
+        padding: 0.5em;
+     }
+
+    header img{
+        max-width: 70%;
+        height: auto;
+        margin-right: 1em;
+    }
+
+    header img:nth-child(2){
+        display: none;
+    }
+
+    main img:nth-child(2){
+        display: none;
+    }
+
+    main img:nth-child(3){
+        display: flex;
+    }
+}
+
+/*Mobile*/
+@media (max-width:43em){
+
+    header img:nth-child(2){
+        display: flex;
+        margin-right: 9em;
+    }
+
+    header li{
+        display: none;
+    }
+
+    main img:nth-child(3){
+        display: none;
+    }
+
+    main img:nth-child(4){
+        display: flex;
+    }
+
+    input[type=search]{
+        display:none;
+    }
+
+}

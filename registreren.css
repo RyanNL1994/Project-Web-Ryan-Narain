@@ -1,0 +1,422 @@
+                        /* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* Lettertypes */
+
+@font-face {
+    font-family: 'Segoe UI';
+    /*a name to be used later*/
+    src: url('css/fonts/segoeui.ttf');
+    /*URL to font*/
+}
+
+/*  */
+
+
+
+
+
+
+
+/* ===== == = === EIGEN CSS === = == =====*/
+
+* {
+    box-sizing: border-box;
+}
+
+/*frutiger font*/
+@font-face{
+    font-family: Frutiger;
+    src: url(".fonts/Frutiger-Light.otf") format("opentype")
+}
+
+body{
+    background-color: #e6e6e9;
+    font-family: Frutiger;
+    color: #242856;
+}
+
+
+
+/* ===== == = === HEADER === = == =====*/
+
+header{
+    background-color: white;
+    padding: 1em;
+}
+
+header nav{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+header img{
+    margin-left: auto;
+    margin-right: 3em;
+}
+
+header img:nth-child(2){
+    display: none;
+}
+
+header img:nth-child(1):hover{
+    transition:all 0.5s;
+    transform: rotateY(180deg);
+}
+
+header img:nth-child(4):hover{
+    transition:all 0.5s;
+    transform: rotateY(180deg);
+}
+
+header label,legend{
+    display:none;
+}
+
+
+
+/* ===== == = === MAIN === = == =====*/
+
+main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: #fac518;
+    margin: 5em auto;
+    max-width: 50%;
+    padding-top: 4em;
+}
+
+main legend {
+    display: none;
+}
+
+main li{
+    display: inline-flex;
+    margin: 0em 0.5em;
+    font-size: 2em;
+}
+
+.active {
+    color: #0079d3;
+    border-bottom: solid #0079d3;
+}
+
+main a{
+    text-decoration: none;
+    color: #242856;
+}
+
+main form {
+    justify-content: center;
+    margin: 2em;
+}
+
+fieldset label {
+    float: left;
+    margin-bottom: 0.5em;
+}
+
+main form input {
+    border: none;
+    padding: 1.3em;
+    margin-bottom: 2em;
+    width: 100%;
+}
+
+button {
+    background-color: #0079d3;
+    color: #ffffff;
+    border: none;
+    padding: 1em;
+    font-size: 1em;
+    margin-bottom: 3em;
+    margin-top: 2em;
+    width: 50%;
+    justify-content: center;
+    align-self: center;
+}
+
+
+
+/* ===== == = === Microinteractie === = == =====*/
+
+/* KLIK BUTTON */
+.klikken:focus{
+   transition:all .2s;
+   transform: scale(1.1, 1.1);
+   background-color:chartreuse;
+}
+
+/* GOED/SLECHTKEURING INPUTTYPE */
+.input:focus{
+  transition:all .5s;
+  transform: scale(1.05, 1.05);
+  background-color: white;
+}
+
+.input:valid {
+  background-color: rgba(0, 255, 0, 0.6);
+}
+
+.input:invalid {
+  background-color: rgba(255, 0, 0, 0.7);
+}
+
+/*SEARCHBAR*/
+input[type=search]{
+  width: 50%;
+  border: 0.1em solid #0079D3;
+  border-radius: 0.8em;
+  font-size: 0.9em;
+  background-color: white;
+  padding: 0.750em 1.950em .750em 0.900em;
+  -webkit-transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
+}
+
+input[type=search]:focus {
+  width: 100%;
+}
+
+
+
+/* ===== == = === media querie === = == =====*/
+
+/*overig voor beter layout registreren form*/
+
+@media (max-width:73em){
+
+    header img:nth-child(2){
+        display: none;
+    }
+
+     header{
+        padding: 0.5em;
+     }
+
+     header img{
+        max-width: 70%;
+        height: auto;
+        margin-right: 1em;
+    }
+
+    main {
+        background: #fac518;
+        max-width: 70%;
+        padding-top: 2em;
+    }
+}
+
+/*Tablet*/
+@media (max-width:53em){
+
+    header img:nth-child(2){
+        display: none;
+    }
+
+    header{
+        padding: 0.5em;
+     }
+
+    header img{
+        max-width: 70%;
+        height: auto;
+        margin-right: 1em;
+    }
+
+    main {
+        background: #fac518;
+        max-width: 90%;
+        padding-top: 2em;
+    }
+}
+
+
+/*Mobile*/
+@media (max-width:43em){
+
+    header img:nth-child(2){
+        display: block;
+    }
+
+    header li{
+        display: none;
+    }
+
+    main {
+        background: #fac518;
+        max-width: 80%;
+        padding-top: 3em;
+    }
+}
+
+@media (max-width:31em){
+
+    main {
+        background: #fac518;
+        max-width: 90%;
+        padding-top: 3em;
+    }
+
+    main li{
+        font-size: 1.5em;
+    }
+
+    main form input {
+        padding: 1em;
+        margin-bottom: 1.5em;
+        width: 100%;
+    }
+
+    input[type=search]{
+        display:none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
